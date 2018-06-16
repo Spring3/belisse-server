@@ -1,0 +1,37 @@
+{
+  "name": "github-issue-gui-server",
+  "version": "1.0.0",
+  "description": "Github issue GUI app server",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "lint": "./node_modules/.bin/eslint .",
+    "test": "npm run lint && npm run cover",
+    "cover": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- test --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Spring3/github-issue-gui-server.git"
+  },
+  "author": "Daniyil Vasylenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Spring3/github-issue-gui-server/issues"
+  },
+  "homepage": "https://github.com/Spring3/github-issue-gui-server#readme",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0",
+    "sinon": "^6.0.0",
+    "supertest": "^3.1.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "helmet": "^3.12.1"
+  }
+}
